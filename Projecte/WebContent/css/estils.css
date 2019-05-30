@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+.imatge{
+	width: 200px
+}
+
+ .glyphicon-plus-sign{      font-size: 40px;      background: white;      border-radius: 25px;        }
+  .afegir{      position: relative;      padding: 45%;      bottom: 20px;        }
+  
+  #search {
+  
+  width: 500px;
+  }
+  
+  .titol{
+  text-transform: uppercase;
+  
+  }
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+#ocult{
+	
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	display: none;
+	
+}

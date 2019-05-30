@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.custom.i18n.resources" value="global" />
+   <constant name="struts.devMode" value="false" />
+
+    <package name="basicstruts2" extends="struts-default">
+        <action name="llistar" class="cat.almata.daw.LlistarAction" method="llistarEspectacles">
+            <result name="success">/main.jsp</result>
+        </action>
+        
+        <action name="funcio" class="cat.almata.daw.FuncioAction" method="obtenirFuncions">
+            <result name="success">funcions.jsp</result>
+        </action>
+        
+        
+        <action name="login" class="cat.almata.daw.UserAction" method="login">
+            <result name="success">index.jsp</result>
+            <result name="input">login.jsp</result>
+        </action> 
+        
+        
+        
+        <action name="register" class="cat.almata.daw.UserAction" method="registrar">
+            <result name="success">index.jsp</result>
+            <result name="input" >register.jsp</result>
+            <result name="login">register.jsp</result>
+        </action>
+        
+        
+        
+        <action name="elegirFuncio" class="cat.almata.daw.FuncioAction" method="select">
+        <result name="success">entrades.jsp</result>
+        </action>
+        
+        <action name="afegirButaques" class="cat.almata.daw.ComprarAction" method="comprar">
+        <result name="success" >index.jsp</result>
+        <result name="input">login.jsp</result>
+        </action>
+        
+        <action name="logout" class="cat.almata.daw.UserAction" method="logout">
+        <result name="success">login.jsp</result>
+        </action>
+        
+        <action name="info" class="cat.almata.daw.UserAction" method="obtenirCompres">
+        <result name="success">user.jsp</result>
+        <result name="login" >login.jsp</result>
+        
+        </action>
+        
+        <action name="searchby" class="cat.almata.daw.CercarAction" method="search">
+        <result name="success">/search.jsp</result>
+        </action>
+        
+        <action name="obtenirfuncions" class="cat.almata.daw.FuncioAction" method="getFuncionsperTeatre">
+        
+        <result name="success">/Tfuncions.jsp</result>
+        </action>
+        
+        
+    </package>
+
+</struts>
+

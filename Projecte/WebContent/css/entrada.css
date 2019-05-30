@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+  .btn-circle.btn-lg {width: 30px;height: 30px;padding: 5px 5px;font-size: 10px;line-height:1.33;border-radius: 100px;}  
+
+
+
+
+.td {
+	padding: 5px;
+}
+
+
+    #escenari {
+    
+    border: 2px solid black;
+     height: 50px;
+  width: 300px;
+  margin: 0 auto;
+    
+    }
+    
+    
